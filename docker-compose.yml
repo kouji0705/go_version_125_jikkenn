@@ -1,0 +1,18 @@
+version: "3.9"
+
+services:
+  go124:
+    build:
+      context: ./go1.24
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    container_name: go124
+
+  go125:
+    build:
+      context: ./go1.25
+    volumes:
+      - ./app:/app
+    working_dir: /app
+    container_name: go125
